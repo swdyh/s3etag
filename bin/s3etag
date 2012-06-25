@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 's3etag'
+
+opt = {}
+op = OptionParser.new
+op.on('-t', '--threshold threshold'){ |v| opt[:threshold] = v.to_i }
+op.on('-p', '--max-parts max-parts'){ |v| opt[:max_parts] = v.to_i }
+op.on('-s', '--min_part_size min_part_size'){ |v| opt[:min_part_size] = v.to_i }
+
+path = ARGV.last
+if path && File.file?(path)
+  begin
+    op.parse ARGV
+  rescue OptionParser::InvalidOption => e
+    puts op.summarize(['invalid option.', 's3etag file'], 100)
+  else
+    puts S3Etag.calc(opt.merge(:file => path))
+  end
+else
+  puts op.summarize(['s3etag file'], 100)
+end
+
