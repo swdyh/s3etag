@@ -23,8 +23,8 @@ calculate AWS S3 etag by multi upload
         -p, --max-parts max-parts
         -s, --min_part_size min_part_size
 
-    % s3etag.rb text.txt
+    % s3etag text.txt
     91fdac689d4861c9ae7a0afa21a1f6b8-18
 
-    % s3etag.rb -s 10000000 text.text
+    % s3etag -s 10000000 text.text
     32aafcd9748824e559b4dbd6b908f6fa-10
