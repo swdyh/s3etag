@@ -32,3 +32,9 @@ http://docs.amazonwebservices.com/AWSRubySDK/latest/AWS/S3/S3Object.html#etag-in
 
     % s3etag -s 10000000 text.text
     32aafcd9748824e559b4dbd6b908f6fa-10
+
+
+# Etc
+
+https://github.com/swdyh/s3etag
+The MIT License
