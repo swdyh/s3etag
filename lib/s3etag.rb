@@ -23,7 +23,7 @@ module S3Etag
 
     r = nil
     begin
-      if total_size < threshold
+      if total_size <= threshold
         r = Digest::MD5.hexdigest(io.read)
       else
         part_size = [(total_size.to_f / max_parts).ceil, min_part_size].max.to_i
