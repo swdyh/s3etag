@@ -1,5 +1,7 @@
 # S3etag
 
+[![Build Status](https://secure.travis-ci.org/swdyh/s3etag.png?branch=master)](http://travis-ci.org/swdyh/s3etag)
+
 calculate AWS S3 etag
 
 > Generally the ETAG is the MD5 of the object. If the object was uploaded using multipart upload then this is the MD5 all of the upload-part-md5s.
