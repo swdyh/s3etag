@@ -1,6 +1,10 @@
 # S3etag
 
-calculate AWS S3 etag by multi upload
+calculate AWS S3 etag
+
+> Generally the ETAG is the MD5 of the object. If the object was uploaded using multipart upload then this is the MD5 all of the upload-part-md5s.
+
+http://docs.amazonwebservices.com/AWSRubySDK/latest/AWS/S3/S3Object.html#etag-instance_method
 
 # Install
 

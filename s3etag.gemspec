@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.version     = '0.0.1'
   s.authors     = ["swdyh"]
   s.homepage    = "https://github.com/swdyh/s3etag"
-  s.summary     = %q{calculate AWS S3 etag by multi upload}
-  s.description = %q{calculate AWS S3 etag by multi upload}
+  s.summary     = %q{calculate AWS S3 etag}
+  s.description = %q{calculate AWS S3 etag}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
